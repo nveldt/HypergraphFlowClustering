@@ -1,0 +1,31 @@
+Cluster information for Amazon reviews hypergraph
+		  Conductance		|T| 	Category
+Label 1 	 0.05526315789473684 	 31 	Amazon_Fashion
+Label 2 	 0.11689899730985572 	 85 	All_Beauty
+Label 3 	 0.18333333333333332 	 48 	Appliances
+Label 4 	 0.09941355767439959 	 22931 	Arts_Crafts_and_Sewing
+Label 5 	 0.07920483552884328 	 79437 	Automotive
+Label 6 	 0.023304263291091188 	 704093 	Books
+Label 7 	 0.04535683668942734 	 73713 	CDs_and_Vinyl
+Label 8 	 0.10469066052559024 	 48186 	Cell_Phones_and_Accessories
+Label 9 	 0.0569535873958006 	 376858 	Clothing_Shoes_and_Jewelry
+Label 10 	 0.08635143506091265 	 11797 	Digital_Music
+Label 11 	 0.06919062211927213 	 160052 	Electronics
+Label 12 	 0.1315345699831366 	 148 	Gift_Cards
+Label 13 	 0.0987035757730488 	 41320 	Grocery_and_Gourmet_Food
+Label 14 	 0.0843442282774712 	 189172 	Home_and_Kitchen
+Label 15 	 0.14216482677220024 	 5334 	Industrial_and_Scientific
+Label 16 	 0.05826591377991949 	 98824 	Kindle_Store
+Label 17 	 0.10889854659447136 	 1581 	Luxury_Beauty
+Label 18 	 0.13249348392701998 	 157 	Magazine_Subscriptions
+Label 19 	 0.05845032232905592 	 60175 	Movies_and_TV
+Label 20 	 0.08932531461894376 	 10620 	Musical_Instruments
+Label 21 	 0.12032337895363579 	 27965 	Office_Products
+Label 22 	 0.11865049228984761 	 32918 	Patio_Lawn_and_Garden
+Label 23 	 0.08520030256037095 	 42531 	Pet_Supplies
+Label 24 	 0.09661968393434621 	 4970 	Prime_Pantry
+Label 25 	 0.13708659429437012 	 802 	Software
+Label 26 	 0.0881832010246336 	 104687 	Sports_and_Outdoors
+Label 27 	 0.10269628837546725 	 73649 	Tools_and_Home_Improvement
+Label 28 	 0.08729156649814647 	 78772 	Toys_and_Games
+Label 29 	 0.08020151239913818 	 17408 	Video_Games
