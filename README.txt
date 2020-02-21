@@ -1,3 +1,3 @@
 README
 
-Minimizing Localized Ratio Cut Objectives in Hypergraphs
+Code for "Localized Flow-Based Clustering in Hypergraphs."
