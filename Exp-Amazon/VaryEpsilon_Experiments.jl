@@ -53,7 +53,7 @@ for lab = 2                     # For each cluster
         p = randperm(nT)
         Rstart = T[p[1:seednum]]
         OneHop = get_immediate_neighbors(H,Ht,Rstart)
-        Rmore = GrowRpercent(H,d,Rstart,OneHop,grownum)
+        Rmore = BestNeighbors(H,d,Rstart,OneHop,grownum)
         R = union(Rmore,Rstart)
         # Force seed nodes to be in output set
         Rs = findall(x->in(x,Rstart),R)
@@ -66,14 +66,14 @@ for lab = 2                     # For each cluster
 
         # First baseline
         kS = nT-length(Rstart)
-        B1 = GrowRpercent(H,d,Rstart,OneHop,kS)
+        B1 = BestNeighbors(H,d,Rstart,OneHop,kS)
         pr1, re1, f11 = PRF(T,B1)
         b1_pr[index] = pr1
         b1_re[index] = re1
         b1_f1[index] = f11
 
         # Baseline 2
-        B2 = GrowR(H,Rstart,OneHop,kS)
+        B2 = TopNeighbors(H,Rstart,OneHop,kS)
         pr2, re2, f12 = PRF(T,B2)
         b2_pr[index] = pr2
         b2_re[index] = re2

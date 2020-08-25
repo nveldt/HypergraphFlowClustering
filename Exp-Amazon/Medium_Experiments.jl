@@ -56,7 +56,7 @@ for grownum = [2000 3000]
                 p = randperm(nT)
                 Rstart = T[p[1:seednum]]
                 OneHop = get_immediate_neighbors(H,Ht,Rstart)
-                Rmore = GrowRpercent(H,d,Rstart,OneHop,grownum)
+                Rmore = BestNeighbors(H,d,Rstart,OneHop,grownum)
                 R = union(Rmore,Rstart)
                 Rs = findall(x->in(x,Rstart),R)     # Force seed nodes to be in output set
                 prr, rer, f1r = PRF(T,R)
@@ -82,7 +82,7 @@ for grownum = [2000 3000]
 
                 # First baseline
                 kS = nT-length(Rstart)
-                B1 = GrowRpercent(H,d,Rstart,OneHop,kS)
+                B1 = BestNeighbors(H,d,Rstart,OneHop,kS)
                 pr1, re1, f11 = PRF(T,B1)
                 b1_pr[lab,index] = pr1
                 b1_re[lab,index] = re1
@@ -91,7 +91,7 @@ for grownum = [2000 3000]
                 b1_cond[index] = cond
 
                 # Baseline 2
-                B2 = GrowR(H,Rstart,OneHop,kS)
+                B2 = TopNeighbors(H,Rstart,OneHop,kS)
                 pr2, re2, f12 = PRF(T,B2)
                 b2_pr[lab,index] = pr2
                 b2_re[lab,index] = re2

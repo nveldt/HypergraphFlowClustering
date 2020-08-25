@@ -68,7 +68,7 @@ for lab = 1:9
     p = randperm(nT)
     Rstart = T[p[1:seednum]]
     OneHop = get_immediate_neighbors(H,Ht,Rstart)
-    Rmore = GrowRpercent(H,d,Rstart,OneHop,grownum)
+    Rmore = BestNeighbors(H,d,Rstart,OneHop,grownum)
     R = union(Rmore,Rstart)
 
     # Force seed nodes to be contained in output set
