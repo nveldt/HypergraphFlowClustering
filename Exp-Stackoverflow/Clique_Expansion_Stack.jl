@@ -13,7 +13,7 @@ m,n = size(H)
 @show size(H)
 
 esmall = findall(x->x<50,order)
-@time Az = ZhouCliqueExpansion(H[esmall,:], order)
+@time Az = WeightedCliqueExpansion(H[esmall,:], order)
 
 matwrite("ZCE_Stack.mat", Dict("Az"=>Az))
 
